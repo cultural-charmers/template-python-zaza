@@ -1,4 +1,7 @@
 {
     "charm_name": "",
-    "charm_name_lc": "{{ cookiecutter.charm_name.lower() }}"
+    "charm_name_lc": "{{ cookiecutter.charm_name.lower() }}",
+    "summary": "",
+    "description": ""
+    "maintainer": "Chris MacNaughton <charms@chris.centauri.solutions>"
 }

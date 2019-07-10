@@ -1,8 +1,8 @@
-name: $metadata.package
-summary: $metadata.summary
-maintainer: $metadata.maintainer
+name: {{ cookiecutter.charm_name_lc }}
+summary: {{ cookiecutter.summary }}
+maintainer:  {{ cookiecutter.maintainer }}
 description: |
-  $metadata.description
+ {{ cookiecutter.description }}
 tags:
   # Replace "misc" with one or more whitelisted tags from this list:
   # https://jujucharms.com/docs/stable/authors-charm-metadata
