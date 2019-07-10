@@ -1,10 +1,12 @@
-# Copyright 2016 Canonical Ltd
+#!/usr/bin/env python3
+
+# Copyright 2019 Canonical Ltd.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#  http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,11 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import sys
+"""Encapsulate cinder-{{ cookiecutter.charm_name_lc }} testing."""
 
-sys.path.append('src')
-sys.path.append('src/lib')
+import logging
+import unittest
 
-# Mock out charmhelpers so that we can test without it.
-import charms_openstack.test_mocks  # noqa
-charms_openstack.test_mocks.mock_charmhelpers()
+import zaza.model
+
+
+class BasicTest(unittest.TestCase):
+    """Encapsulate {{ cookiecutter.charm_name }} tests."""
+
+    def test_{{ cookiecutter.charm_name_lc }}(self):
+        logging.info('Testing {{ cookiecutter.charm_name_lc }}')
