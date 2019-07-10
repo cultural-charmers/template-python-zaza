@@ -2,5 +2,5 @@ series: &series xenial
 
 applications:
   {{ cookiecutter.charm_name }}:
-    charm: {{ cookiecutter.charm_name }}
+    charm: ../../../{{ cookiecutter.charm_name }}
     series: *series
