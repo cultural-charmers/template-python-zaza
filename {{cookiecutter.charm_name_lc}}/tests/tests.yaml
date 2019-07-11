@@ -5,4 +5,4 @@ gate_bundles:
 smoke_bundles:
   - bionic
 tests:
-  - tests.tests.test_{{cookiecutter.charm_name_lc}}.BasicCharmTest
+  - tests.test_{{cookiecutter.charm_name_lc}}.BasicCharmTest
